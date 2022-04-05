@@ -6,12 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montiague, Bencel</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     
     <script src="https://kit.fontawesome.com/19eff177c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container mt-5 mb-5">
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-dark fixed-top bg-dark shadow-sm">
+    <div class="container-lg">
+      <a href="./index.html" class="navbar-brand text-warning fw-bold fs-4">BNCL</a>
+      <div class="dropdown">
+        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <em class="fas fa-bars"></em>
+        </button>
+        <ul class="dropdown-menu bg-warning" aria-labelledby="dropdownMenuButton">
+          <li><a href="#experties" class="dropdown-item">Experties</a></li>
+          <li><a href="#services" class="dropdown-item">Services I Offer</a></li>
+          <li><a href="#" class="dropdown-item">Looking for a Freelance?</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- home section start -->
+  <section class="home py-5" id="home">
+    <div class="container-lg">
+      <div class="row min-vh-100 align-items-center align-content-center">
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="home-img text-center">
+            <img src="./assets/images/my-pic.jpeg" class="profile-pic img-fluid" alt="profile img">
+          </div>
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+          <div class="home-text">
+            <p class="text-light mb-2">Hey there, I'm</p>
+            <h1 class="text-warning text-uppercase fs-1 fw-bold">Software Engineer</h1>
+            <h2 class="text-light fs-4">Bencel Montiague</h2>
+            <p class="text-light mt-4 text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit, sed error adipisci itaque assumenda accusantium
+              laboriosam reprehenderit neque pariatur fugit impedit quod corrupti doloremque ipsa?
+            </p>
+            <a href="#" class="btn btn-warning px-3 mt-3">Looking for a Freelance?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home section end -->
+
+  <!-- experties section start -->
+  <section class="experties py-5" id="experties">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="text-warning fw-bold mb-5">My Experties</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-text">
+            <h3 class="fs-4 mb-3 text-light">I have experiences in various types of technologies used in Software Development</h3>
+            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, sint assumenda fugit, cupiditate iusto impedit totam vel nostrum quae, odio possimus perspiciatis ex aliquam consequatur tempora magnam? Esse, earum voluptates.</p>
+          </div>
+          <div class="row text-center text-uppercase my-3 text-info">
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fs-1 fw-bold">20</h4>
+                <p>Finished Projects</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fs-1 fw-bold">10</h4>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fs-1 fw-bold">75</h4>
+                <p>Project Reviews</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-center">
+              <a href="#" class="btn btn-warning px-4 me-5">Download CV</a>
+              <div class="social-links">
+                <a href="#" class="text-warning me-3"><em class="fab fa-facebook-f"></em></a>
+                <a href="#" class="text-warning me-3"><em class="fab fa-twitter"></em></a>
+                <a href="#" class="text-warning me-3"><em class="fab fa-instagram"></em></a>
+                <a href="#" class="text-warning me-3"><em class="fab fa-linkedin-in"></em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="skill-item mb-4">
+            <h3 class="fs-6 text-info">Java</h3>
+            <div class="progress" style="height: 5px !important;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6 text-info">HTML</h3>
+            <div class="progress" style="height: 5px !important;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6 text-info">JavaScript</h3>
+            <div class="progress" style="height: 5px !important;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6 text-info">SQL Server</h3>
+            <div class="progress" style="height: 5px !important;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6 text-info">MySQL</h3>
+            <div class="progress" style="height: 5px !important;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- experties section end -->
+
+  <!-- what I do section start -->
+  <section class="services py-5" id="services">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-18">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5 text-warning">Services I Offer</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="service-item bg-warning shadow-sm p-4 rounded">
+            <div class="icon my-3">
+              <em class="fas fa-code fw-bold fs-2"></em>
+            </div>
+            <h3 class="fs-5 py-2">Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="service-item bg-warning shadow-sm p-4 rounded">
+            <div class="icon my-3">
+              <em class="fas fa-mobile-alt fw-bold fs-2"></em>
+            </div>
+            <h3 class="fs-5 py-2">Mobile App Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="service-item bg-warning shadow-sm p-4 rounded">
+            <div class="icon my-3">
+              <em class="fas fa-lightbulb fw-bold fs-2"></em>
+            </div>
+            <h3 class="fs-5 py-2">Creative Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- what I do section end -->
+
+    <!-- <div class="container mt-5 mb-5">
         <div class="row no-gutters">
             <div class="col-md-4 col-lg-4"><img class="img-fluid" src="./assets/images/my-pic.jpeg" alt="my-pic"></div>
             <div class="col-md-8 col-lg-8">
@@ -115,10 +289,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>
