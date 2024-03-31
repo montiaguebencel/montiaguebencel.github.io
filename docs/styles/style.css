@@ -1,5 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+    
+canvas {
+  display: block;
+}
+    
+#marbles {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0e0e0e;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
 body {
     background-color: #0e0e0e !important;
+    height: 100%;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  pointer-events: none;
+}
+
+section .btn {
+  pointer-events: auto !important;
+}
+
+section a {
+  pointer-events: auto !important;
 }
 
 img {
@@ -34,6 +69,18 @@ img {
 }
 
 .dropdown-item:hover {
-  background-color: #0e0e0e !important;
-  color: white !important;
+  background-color: #15fbff !important;
+}
+
+.experties {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 Im !important;
+}
+
+.services {
+  margin-bottom: 150px !important;
+}
+
+.freelancer {
+
 }
