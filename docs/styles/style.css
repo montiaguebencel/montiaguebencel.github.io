@@ -17,6 +17,17 @@ canvas {
   left: 0;
 }
 
+a.btn-warning {
+  border: none !important;
+  border-radius: 4px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+a.btn-warning:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 6px #ffc107 !important;
+}
+
+
 body {
     background-color: #0e0e0e !important;
     height: 100%;
