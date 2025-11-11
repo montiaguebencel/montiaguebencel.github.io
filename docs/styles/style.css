@@ -357,6 +357,10 @@ body {
   font-size: 1.2rem;
 }
 
+.floating-card span {
+  color: var(--text-primary);
+}
+
 .card-1 {
   top: 10%;
   right: -10%;
