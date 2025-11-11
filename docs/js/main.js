@@ -129,11 +129,12 @@ const observer = new IntersectionObserver((entries) => {
       if (entry.target.querySelector('.skill-progress')) {
         const progressBars = entry.target.querySelectorAll('.skill-progress');
         progressBars.forEach(bar => {
-          const width = bar.style.width;
-          bar.style.width = '0';
+          const targetWidth = bar.getAttribute('data-progress') + '%';
+          bar.dataset.targetWidth = targetWidth;
+          bar.style.width = '0%';
           setTimeout(() => {
-            bar.style.width = width;
-          }, 100);
+            bar.style.width = bar.dataset.targetWidth;
+          }, 200);
         });
       }
     }
@@ -168,10 +169,12 @@ const skillsObserver = new IntersectionObserver((entries) => {
       const progressBars = document.querySelectorAll('.skill-progress');
       progressBars.forEach(bar => {
         const targetWidth = bar.getAttribute('data-progress') + '%';
-        bar.style.width = '0';
+        // Store the target width before setting to 0
+        bar.dataset.targetWidth = targetWidth;
+        bar.style.width = '0%';
         setTimeout(() => {
-          bar.style.width = targetWidth;
-        }, 100);
+          bar.style.width = bar.dataset.targetWidth;
+        }, 200);
       });
       skillsAnimated = true;
     }
