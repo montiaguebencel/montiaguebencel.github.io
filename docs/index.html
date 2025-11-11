@@ -4,423 +4,702 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montiague, Bencel</title>
+    <title>Bencel Montiague | Software Engineer Portfolio</title>
+    <meta name="description" content="Software Engineer specializing in full-stack development, CI/CD, and cloud technologies. 5+ years experience building scalable applications.">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/BNCL.ico">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    
     <script src="https://kit.fontawesome.com/19eff177c4.js" crossorigin="anonymous"></script>
 </head>
-<body class="text-dark">
+<body>
 
-  <!-- <div id="marbles">
-  </div> -->
-
-  <!-- navbar start -->
-  <nav class="navbar navbar-dark fixed-top bg-dark shadow-sm">
-    <div class="container-lg">
-      <a href="./index.html" class="navbar-brand text-warning fw-bold fs-4">BNCL</a>
-      <div class="dropdown">
-        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-          <em class="fas fa-bars"></em>
-        </button>
-        <ul class="dropdown-menu bg-warning" aria-labelledby="dropdownMenuButton">
-          <li><a href="#home" class="dropdown-item">Summary</a></li>
-          <li><a href="#experties" class="dropdown-item">Experties</a></li>
-          <li><a href="#services" class="dropdown-item">Services I Offer</a></li>
-          <li><a href="#freelancer" class="dropdown-item">Looking for a Freelance?</a></li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-icon">{'<'}</span>
+        <span class="brand-text">BNCL</span>
+        <span class="brand-icon">{'/>'}</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- navbar end -->
 
-  <!-- home section start -->
-  <section class="home py-5" id="home">
-    <div class="container-lg">
-      <div class="row min-vh-100 align-items-center align-content-center">
-        <div class="col-md-6 mt-5 mt-md-0">
-          <div class="home-img text-center">
-            <img src="./assets/images/my-pic.jpeg" class="profile-pic img-fluid" alt="profile img">
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-background">
+      <div class="code-animation"></div>
+    </div>
+    <div class="container">
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+          <div class="hero-image-wrapper" data-aos="fade-left">
+            <div class="image-border-effect"></div>
+            <img src="./assets/images/my-pic.jpeg" class="hero-profile-pic img-fluid" alt="Bencel Montiague">
+            <div class="floating-card card-1">
+              <i class="fas fa-code"></i>
+              <span>Full-Stack Dev</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fab fa-docker"></i>
+              <span>DevOps</span>
+            </div>
+            <div class="floating-card card-3">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud Native</span>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 mt-5 mt-md-0 order-md-first">
-          <div class="home-text">
-            <p class="text-light mb-2">Hey there, I'm a</p>
-            <h1 class="text-warning text-uppercase fs-1 fw-bold">Software Engineer</h1>
-            <h2 class="text-light fs-4">Bencel Montiague</h2>
-            <p class="text-light mt-4 text-muted">
-              Have passion for crafting innovative and robust software solutions. With 5 years of experience in the industry,
-              I have honed my skills in developing scalable applications and solving complex problems.
+        <div class="col-lg-6 order-lg-1">
+          <div class="hero-content" data-aos="fade-right">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Bencel Montiague</h1>
+            <div class="hero-title-wrapper">
+              <h2 class="hero-title">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+              </h2>
+            </div>
+            <p class="hero-description">
+              Passionate about crafting innovative and robust software solutions. With <strong>5 years of experience</strong> 
+              in the industry, I specialize in developing scalable applications, implementing CI/CD pipelines, and 
+              architecting cloud-native solutions.
             </p>
-            <p class="text-light mt-4 text-muted">
-              My journey as a software developer began with a strong foundation in computer science and programming principles.
-              Over the years, I have worked on a wide range of projects, from developing web and mobile applications to designing
-              and implementing database systems.
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>5+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat-item">
+                <h3>30+</h3>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat-item">
+                <h3>85%</h3>
+                <p>CI/CD Expertise</p>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
+              <a href="./assets/docs/CV - Bencel Montiague.pdf" class="btn btn-outline" download>
+                <i class="fas fa-download me-2"></i>Download CV
+              </a>
+            </div>
+            <div class="hero-social">
+              <a href="https://github.com/montiaguebencel" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bencel-montiague-08212b224" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.facebook.com/b.montiague" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/bnclmntge/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get To Know</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Building the future, one line of code at a time</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-content">
+            <h3 class="about-heading">Software Engineer & DevOps Specialist</h3>
+            <p class="about-text">
+              My journey as a software developer began with a strong foundation in computer science and 
+              programming principles. Over the years, I have worked on a wide range of projects, from 
+              developing web and mobile applications to designing and implementing database systems.
             </p>
-            <a href="#experties" class="btn btn-warning px-3 mt-3 btn-new">Learn more</a>
+            <p class="about-text">
+              Software development doesn't just end in creating software. It also requires the application 
+              of standard business practices to build it effectively. I specialize in conducting 
+              <strong>planning, determining requirements, designing, building, documenting, testing, 
+              deploying, and maintaining</strong> robust software solutions.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Full-Stack Development</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Cloud Architecture</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>CI/CD Implementation</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Agile Methodologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fab fa-docker"></i>
+              </div>
+              <h4>70%</h4>
+              <p>Docker</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-dharmachakra"></i>
+              </div>
+              <h4>60%</h4>
+              <p>Kubernetes</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h4>85%</h4>
+              <p>CI/CD</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4>80%</h4>
+              <p>Cloud Platforms</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- home section end -->
 
-  <!-- experties section start -->
-  <section class="experties py-5" id="experties">
-    <div class="container-lg py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="section-title text-center">
-            <h2 class="text-warning fw-bold mb-5">My Experties</h2>
-          </div>
-        </div>
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Expertise across multiple technologies and frameworks</p>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <div class="about-text">
-            <h3 class="fs-4 mb-3 text-light">I have experiences in various types of technologies used in Software Development</h3>
-            <p class="text-muted">
-              Software development doesn't just end in creating software. It is also need the application of standard business
-              practices to build it. You need to conduct
-              <strong>
-                planning, determining requirements, designing, building, documenting, testing,
-                deploying, and maintaining;
-              </strong>
-              and there are various tools on each of those phases namely:
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-code me-2"></i>Programming & Frameworks
+            </h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%;" data-progress="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-percentage">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 55%;" data-progress="55"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 50%;" data-progress="50"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Vue.js</span>
+                <span class="skill-percentage">40%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 40%;" data-progress="40"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Flutter</span>
+                <span class="skill-percentage">40%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 40%;" data-progress="40"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-server me-2"></i>DevOps & Cloud
+            </h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Azure Cloud</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%;" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Database Management</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%;" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Jenkins</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%;" data-progress="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Bitbucket Pipelines</span>
+                <span class="skill-percentage">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 55%;" data-progress="55"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Career Path</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">My professional journey in software engineering</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2025 - Present</span>
+            <h3>Software Engineering Consultant</h3>
+            <h4>MiVets Co. LLC</h4>
+            <p>
+              Architecting and developing an innovative Bitcoin education platform, creating interactive learning 
+              modules and gamified experiences to simplify cryptocurrency concepts for beginners. Building scalable 
+              backend services with Java and Spring Boot to manage user progress, blockchain integrations, and 
+              real-time market data. Implementing secure wallet simulation features and designing RESTful APIs 
+              for seamless mobile and web experiences, while advising on technical strategy and best practices.
             </p>
-          </div>
-          <div class="row text-center text-uppercase my-3 text-info">
-            <div class="col-sm-4">
-              <div class="fact-item">
-                <h4 class="fs-1 fw-bold">70%</h4>
-                <p>Docker</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="fact-item">
-                <h4 class="fs-1 fw-bold">60%</h4>
-                <p>Kubernetes</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="fact-item">
-                <h4 class="fs-1 fw-bold">85%</h4>
-                <p>CI/CD</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 d-flex align-items-center">
-              <a href="./assets/docs/CV - Bencel Montiague.pdf" class="btn btn-warning px-4 me-5">Download CV</a>
-              <div class="social-links">
-                <a href="https://www.facebook.com/b.montiague" target="_blank" class="text-warning me-3"><em class="fab fa-facebook-f"></em></a>
-                <a href="https://github.com/montiaguebencel" target="_blank" class="text-warning me-3"><em class="fab fa-github"></em></a>
-                <a href="https://www.instagram.com/bnclmntge/" target="_blank" class="text-warning me-3"><em class="fab fa-instagram"></em></a>
-                <a href="https://www.linkedin.com/in/bencel-montiague-08212b224" target="_blank" class="text-warning me-3"><em class="fab fa-linkedin-in"></em></a>
-              </div>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Vibe Coding</span>
+              <span class="tag">Bitcoin</span>
+              <span class="tag">React.js</span>
             </div>
           </div>
         </div>
-        <div class="col-md-6 mt-5 mt-md-0">
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Java</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">July 2024 - Present</span>
+            <h3>Java Engineer</h3>
+            <h4>ING Hubs Philippines</h4>
+            <p>
+              Developing and maintaining high-performance Java applications for enterprise banking systems, 
+              implementing microservices architecture with Spring Boot and handling millions of daily transactions. 
+              Optimized critical database queries reducing response time by 45%, while ensuring code quality through 
+              comprehensive unit testing and code reviews. Collaborating with global teams to deliver scalable 
+              solutions following secure coding practices and regulatory compliance standards.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Banking Tech</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Nodejs</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">June 2024 - June 2025</span>
+            <h3>Software Engineering Consultant</h3>
+            <h4>TopApps Inc.</h4>
+            <p>
+              Provided strategic technical consulting to optimize software development lifecycles and modernize 
+              legacy systems. Conducted comprehensive code audits and architecture reviews, delivering actionable 
+              recommendations that improved system performance by 40%. Designed custom automation solutions and 
+              guided cross-functional teams in adopting cloud-native technologies and agile methodologies.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">React.js</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Jenkins</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Database Management</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">May 2022 - May 2024</span>
+            <h3>Senior Software Developer / DevOps Engineer</h3>
+            <h4>TopApps Inc.</h4>
+            <p>
+              Spearheaded enterprise-level software development initiatives, designing and deploying scalable 
+              microservices architectures. Automated CI/CD workflows reducing deployment time by 60%, while 
+              orchestrating containerized applications across cloud infrastructure. Mentored development teams 
+              in modern DevOps practices and established best practices for code quality and security.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">React.js</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Jenkins</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Flutter</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">October 2020 - May 2022</span>
+            <h3>Software Engineer</h3>
+            <h4>Hooli Software Development Services</h4>
+            <p>
+              Full-stack development projects, implementing CI/CD pipelines, and architecting 
+              cloud-native solutions. Specializing in Java, Node.js, and containerization technologies.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Azure</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Reactjs</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">October 2020 - July 2021</span>
+            <h3>Software Engineer</h3>
+            <h4>Carbonetes</h4>
+            <p>
+              Full-stack development, implementing CI/CD pipelines and plugins.
+              Specializing in Java, Node.js, and containerization technologies.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Bitbucket</span>
+              <span class="tag">Jenkins</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Vuejs</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">March 2019 - September 2020</span>
+            <h3>IT Staff - Programmer</h3>
+            <h4>Jemina Sy Foundation</h4>
+            <p>
+              Developed and maintained internal software systems, managed databases, and provided 
+              technical support. Focused on creating efficient solutions for organizational needs.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Web Development</span>
+              <span class="tag">Database</span>
+              <span class="tag">Support</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Jenkins</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">August 2018 - March 2019</span>
+            <h3>Geographical Information System Support</h3>
+            <h4>Jollibee Foods Corporation</h4>
+            <p>
+              Provided Geographic Information System support, managed technical infrastructure, 
+              and assisted in data management and analysis.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">GIS</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Support</span>
             </div>
           </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Azure</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="skill-item mb-4">
-            <h3 class="fs-6 text-warning">Bitbucket Pipelines</h3>
-            <div class="progress" style="height: 5px !important;">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">April 2017 - June 2017</span>
+            <h3>ICTS Staff - Intern</h3>
+            <h4>Toyota Abad Santos</h4>
+            <p>
+              Gained foundational experience in IT support, system maintenance, and technical 
+              troubleshooting in an enterprise environment.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">IT Support</span>
+              <span class="tag">Systems</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- experties section end -->
 
-  <!-- what I do section start -->
-  <section class="services py-5" id="services">
-    <div class="container-lg py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-18">
-          <div class="section-title text-center">
-            <h2 class="fw-bold mb-5 text-warning">Services I Offer</h2>
-          </div>
-        </div>
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">Services I Offer</h2>
+        <p class="section-subtitle">Comprehensive software engineering solutions</p>
       </div>
-      <div class="row text-center">
-        <div class="col-md-3 col-lg-3 mb-4 mb-md-0">
-          <div class="service-item bg-warning shadow-sm p-4 rounded">
-            <div class="icon my-3">
-              <em class="fas fa-code fw-bold fs-2"></em>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
             </div>
-            <h3 class="fs-5 py-2">Web Development</h3>
-            <p>Deep knowledge in HTML, CSS, and JavaScript.</p>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">
+              Building responsive, scalable web applications using modern frameworks like React and Vue. 
+              Deep knowledge in HTML, CSS, JavaScript, and backend technologies.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Single Page Applications</li>
+              <li><i class="fas fa-check"></i> RESTful APIs</li>
+              <li><i class="fas fa-check"></i> Progressive Web Apps</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4 mb-md-0">
-          <div class="service-item bg-warning shadow-sm p-4 rounded">
-            <div class="icon my-3">
-              <em class="fa-solid fa-mobile fw-bold fs-2"></em>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
             </div>
-            <h3 class="fs-5 py-2">Mobile Development</h3>
-            <p>Design and build Android and iOS applications.</p>
+            <h3 class="service-title">Mobile Development</h3>
+            <p class="service-description">
+              Creating native and cross-platform mobile applications for Android and iOS using 
+              Flutter and modern development practices.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Cross-Platform Apps</li>
+              <li><i class="fas fa-check"></i> Native Performance</li>
+              <li><i class="fas fa-check"></i> App Store Deployment</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4 mb-md-0">
-          <div class="service-item bg-warning shadow-sm p-4 rounded">
-            <div class="icon my-3">
-              <em class="fa-brands fa-docker fw-bold fs-2"></em>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fab fa-docker"></i>
             </div>
-            <h3 class="fs-5 py-2">Docker & Kubernetes</h3>
-            <p>Huge understanding in containerizing application.</p>
+            <h3 class="service-title">Containerization</h3>
+            <p class="service-description">
+              Expert in containerizing applications using Docker and orchestrating them with 
+              Kubernetes for scalable cloud deployments.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Docker Containers</li>
+              <li><i class="fas fa-check"></i> Kubernetes Orchestration</li>
+              <li><i class="fas fa-check"></i> Microservices Architecture</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 mb-4 mb-md-0">
-          <div class="service-item bg-warning shadow-sm p-4 rounded">
-            <div class="icon my-3">
-              <em class="fas fa-lightbulb fw-bold fs-2"></em>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-rocket"></i>
             </div>
-            <h3 class="fs-5 py-2">CI/CD</h3>
-            <p>Expert in implementing deployment automation.</p>
+            <h3 class="service-title">CI/CD Implementation</h3>
+            <p class="service-description">
+              Implementing automated deployment pipelines using Jenkins, Azure DevOps, and 
+              Bitbucket Pipelines for continuous integration and delivery.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Automated Pipelines</li>
+              <li><i class="fas fa-check"></i> Test Automation</li>
+              <li><i class="fas fa-check"></i> Cloud Deployment</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- what I do section end -->
 
-  <!-- freelancer section start -->
-  <section class="freelancer bg-warning py-5" id="freelancer">
-    <div class="container-lg py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <p class="fs-5">Do you have any project?</p>
-          <h2 class="fw-bold fs-1 mb-4">I'm Available For Freelancer Projects</h2>
-          <a href="mailto:montiaguebencel15@gmail.com" class="btn btn-outline-dark">Hire Me</a>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Available for freelance projects and collaboration</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="contact-info">
+            <h3 class="contact-info-title">Let's talk about your project</h3>
+            <p class="contact-info-text">
+              I'm currently available for freelance work and open to discussing new projects 
+              and opportunities. Let's create something amazing together!
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Email</h4>
+                  <a href="mailto:montiaguebencel15@gmail.com">montiaguebencel15@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="method-details">
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/bencel-montiague-08212b224" target="_blank">Connect with me</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="method-details">
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/montiaguebencel" target="_blank">View my code</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="https://github.com/montiaguebencel" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bencel-montiague-08212b224" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.facebook.com/b.montiague" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/bnclmntge/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8" data-aos="fade-left">
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Project Discussion" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell me about your project..." required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </section>
-  <!-- freelancer section end -->
 
-    <!-- <div class="container mt-5 mb-5">
-        <div class="row no-gutters">
-            <div class="col-md-4 col-lg-4"><img class="img-fluid" src="./assets/images/my-pic.jpeg" alt="my-pic"></div>
-            <div class="col-md-8 col-lg-8">
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row justify-content-between align-items-center p-4 bg-dark text-white">
-                        <h3 class="display-5">Bencel Montiague</h3>
-                        <a href="https://www.facebook.com/b.montiague" target="_" style="color: white !important;"><em style="font-size: 20px;" class="fa-brands fa-facebook-square"></em></a>
-                        <a href="https://www.linkedin.com/in/bencel-montiague-08212b224/" target="_" style="color: white !important;"><em style="font-size: 20px;" class="fa-brands fa-linkedin"></em></a>
-                        <a href="mailto:montiaguebencel15@gmail.com" target="_" style="color: white !important;"><em style="font-size: 20px;" class="fa-brands fa-google"></em></a>
-                        <a href="https://www.instagram.com/bnclmntge" target="_" style="color: white !important;"><em style="font-size: 20px;" class="fa-brands fa-instagram"></em></a>
-                        <a href="https://www.youtube.com/c/KuyaBhencelTV" target="_" style="color: white !important;"><em style="font-size: 20px;" class="fa-brands fa-youtube"></em></a>
-                    </div>
-                    <div class="p-3 bg-black text-light">
-                        <h6>Software Engineer,  CI/CD Engineer, Full-Stack Web Developer</h6>
-                    </div>
-                    <div class="d-flex flex-row text-white">
-                        <div class="p-4 bg-danger text-center skill-block">
-                            <h4>90%</h4>
-                            <h6>Java</h6>
-                        </div>
-                        <div class="p-3 bg-success text-center skill-block">
-                            <h4>80%</h4>
-                            <h6>Nodejs</h6>
-                        </div>
-                        <div class="p-3 bg-primary text-center skill-block">
-                            <h4>70%</h4>
-                            <h6>Bash</h6>
-                        </div>
-                        <div class="p-3 bg-warning text-center skill-block">
-                            <h4>75%</h4>
-                            <h6>Reactjs</h6>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row text-white">
-                        <div style="background-color: burlywood;" class="p-4 text-center skill-block">
-                            <h4>85%</h4>
-                            <h6>CI/CD</h6>
-                        </div>
-                        <div style="background-color: darkslategrey;" class="p-3 text-center skill-block">
-                            <h4>50%</h4>
-                            <h6>Vuejs</h6>
-                        </div>
-                        <div style="background-color: tomato;" class="p-3 text-center skill-block">
-                            <h4>70%</h4>
-                            <h6>Typescript</h6>
-                        </div>
-                        <div style="background-color: saddlebrown;" class="p-3 text-center skill-block">
-                            <h4>90%</h4>
-                            <h6>MySQL and SQL Server</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="row no-gutters" style="margin-top: 30px;">
-            <div class="col-md-12" style="color: white;">
-                <h3 class="display-5">Other Software Development Tools</h3>
-                <div class="row">
-                    <div class="col-md-2 text-center bg-dark p-2">
-                        <h6>Docker</h6>
-                    </div>
-                    <div class="col-md-3 text-center bg-dark p-2">
-                        <h6>Kubernetes</h6>
-                    </div>
-                    <div class="col-md-2 text-center bg-dark p-2">
-                        <h6>Helm Charts</h6>
-                    </div>
-                    <div class="col-md-3 text-center bg-dark p-2">
-                        <h6>Azure</h6>
-                    </div>
-                    <div class="col-md-2 text-center bg-dark p-2">
-                        <h6>AWS</h6>
-                    </div>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>{'<'}BNCL{'/>'}</h3>
+          <p>Building innovative software solutions</p>
         </div>
-        <div class="row no-gutters" style="margin-top: 30px;">
-            <div class="col-md-12" style="color: white;">
-                <h3 class="display-5">Work Experiences</h3>
-                <div class="row">
-                    <div class="col-md-3 text-center bg-dark p-3">
-                        <h6>Hooli Software Development Services</h6>
-                        <span style="font-size: 13px;">Software Engineer</span><br>
-                        <span style="font-size: 13px;">October 2020 - Present</span>
-                    </div>
-                    <div class="col-md-3 text-center bg-dark p-3">
-                        <h6>Jemina Sy Foundation</h6>
-                        <span style="font-size: 13px;">IT Staff - Programmer</span><br>
-                        <span style="font-size: 13px;">March 2019 - September 2020</span>
-                    </div>
-                    <div class="col-md-3 text-center bg-dark p-3">
-                        <h6>Jollibee Foods Corporation</h6>
-                        <span style="font-size: 13px;">G.I.S. Support</span><br>
-                        <span style="font-size: 13px;">August 2018 - March 2019</span>
-                    </div>
-                    <div class="col-md-3 text-center bg-dark p-3">
-                        <h6>Toyota Abad Santos</h6>
-                        <span style="font-size: 13px;">ICTS Staff - Intern</span><br>
-                        <span style="font-size: 13px;">April 2017 - June 2017</span>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </div>
-    </div> -->
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Bencel Montiague. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS("marbles", {
-        "particles": {
-          "number": {
-            "value": 30,
-            "density": {
-              "enable": false
-            }
-          },
-          "color": {
-            "value": "#000"
-          },
-          "opacity": {
-            "value": 1
-          },
-          "shape": {
-            "type": "circle",
-            "stroke": {
-              "width": 5,
-              "color": "#fff"
-            }
-          },
-          "size": {
-            "value": 5
-          },
-          "line_linked": {
-            "enable": false
-          },
-          "move": {
-            "enable": true,
-            "speed": 3,
-            "random": true,
-            "direction": "none",
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "grab"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            }
-          },
-          "modes": {
-            "grab": {
-              "distance": 300,
-              "line_linked": {
-                "opacity": 1
-              }
-            },
-            "push": {
-              "particles_nb": 3
-            }
-          }
-        }
-      });
-    </script>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
